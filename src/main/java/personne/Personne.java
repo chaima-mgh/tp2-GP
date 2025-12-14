@@ -5,13 +5,13 @@ public class Personne {
         this.orientation = "nord";
     }
     public String tourner(int fois){
-        if(fois  == 0){
+        if(fois  %4== 0){
            orientation ="nord";
-        }else if(fois == 1){
+        }else if(fois %4== 1){
             orientation ="est";
-        }else if(fois  == 2){
+        }else if(fois  %4== 2){
             orientation ="sud";
-        }else if (fois  == 3){
+        }else if (fois %4== 3){
             orientation ="ouest";
         }
     return orientation ;
